@@ -90,3 +90,6 @@ OAuth 2.0 Device Authorization Grant
 5- message.read and message.write scope create and add to my_client
 6- create user my_user
 
+
+cookie name session value 748e34c3-ab23-4121-8057-e29043efbd51
+
