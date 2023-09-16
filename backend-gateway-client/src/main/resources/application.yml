@@ -12,6 +12,14 @@ spring:
             Path=/messages/**
           filters:
             TokenRelay=
+
+        - id: resources1
+          uri: http://backend-resources:8082/test2
+          predicates:
+            Path=/test2/**
+          filters:
+            TokenRelay=
+
   security:
     oauth2:
       client:
