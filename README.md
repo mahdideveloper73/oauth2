@@ -66,6 +66,27 @@ I can also add final users, manage their profile and password.
 In this chapter I will connect my Spring Cloud Gateway as a client server to Keycloak. Then, connecter my resources server
 to validate the JWT against Keycloak.
 
-1- به صورت دستی هر سرویس اجرا شود.
-2- با اسفاده از پلاگین اجرا شود.
+1- create my_realm
+2- create my_client
+Valid redirect URIs (
+http://backend-gateway-client:8083/login/oauth2/code/gateway
+http://backend-gateway-client:8083/authorized
+)
+Web origins (
+http://backend-gateway-client:8083
+)
+
+3- Capability config 
+(
+Client authentication
+Authorization
+Standard flow
+Direct access grants
+OAuth 2.0 Device Authorization Grant
+)
+
+4- Client secret copy and use in backend-gateway-client
+
+5- message.read and message.write scope create and add to my_client
+6- create user my_user
 
